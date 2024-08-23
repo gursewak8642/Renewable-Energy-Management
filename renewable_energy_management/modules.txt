@@ -1,1 +1,3 @@
 Renewable Energy Management System
+Energy Production Tracking Module
+User Management

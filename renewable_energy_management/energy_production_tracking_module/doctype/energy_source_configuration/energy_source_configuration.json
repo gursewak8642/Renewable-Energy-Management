@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-08-21 15:42:22.210722",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "source_id",
+  "source_type",
+  "capacity",
+  "installation_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_id",
+   "fieldtype": "Data",
+   "label": "Source Id",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "source_type",
+   "fieldtype": "Data",
+   "label": "Source Type"
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Float",
+   "label": "Capacity"
+  },
+  {
+   "fieldname": "installation_date",
+   "fieldtype": "Date",
+   "label": "Installation Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-21 18:40:33.309485",
+ "modified_by": "Administrator",
+ "module": "Energy Production Tracking Module",
+ "name": "Energy Source Configuration",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

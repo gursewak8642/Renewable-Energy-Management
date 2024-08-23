@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-21 17:21:06.716389",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "expertise_area",
+  "experience_level",
+  "years_of_experience"
+ ],
+ "fields": [
+  {
+   "fieldname": "expertise_area",
+   "fieldtype": "Select",
+   "label": "Expertise Area",
+   "options": "Maintenance\nSolar Energy\nWind Energy"
+  },
+  {
+   "fieldname": "experience_level",
+   "fieldtype": "Select",
+   "label": "Experience Level",
+   "options": "Beginner\nIntermediate\nAdvanced"
+  },
+  {
+   "fieldname": "years_of_experience",
+   "fieldtype": "Int",
+   "label": "Years of Experience"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-21 17:24:49.057925",
+ "modified_by": "Administrator",
+ "module": "User Management",
+ "name": "Expertise Areas",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

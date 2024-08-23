@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-08-21 17:32:52.291725",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-08-21 17:32:52.291725",
+ "modified_by": "Administrator",
+ "module": "Energy Production Tracking Module",
+ "name": "Consumption Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \r\n    ecd.`ConsumerID`, \r\n    ecd.`Location`, \r\n    SUM(ecd.`ConsumptionAmount`) AS `TotalConsumption`, \r\n    AVG(ecd.`ConsumptionAmount`) AS `AverageConsumption`, \r\n    co.`SuggestedActions`, \r\n    co.`PotentialSavings`, \r\n    DATE(ecd.`Timestamp`) AS `ConsumptionDate`\r\nFROM \r\n    `tabEnergyConsumptionData` ecd\r\nLEFT JOIN \r\n    `tabConsumptionOptimization` co \r\nON \r\n    ecd.`ConsumerID` = co.`ConsumerID`\r\nGROUP BY \r\n    ecd.`ConsumerID`, \r\n    ecd.`Location`, \r\n    DATE(ecd.`Timestamp`)\r\nORDER BY \r\n    `ConsumptionDate` ASC;\r\n",
+ "ref_doctype": "Energy Consumption Data",
+ "report_name": "Consumption Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}
